@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 	<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>CIT</title> 	
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	
+
+	
+	<!-- For slider plugin-->
+    <link rel="stylesheet" href="slider/nivo-slider.css" type="text/css" media="screen" />  
+	<link rel="stylesheet" href="slider/default/default.css" type="text/css" media="screen" />
+	   <script type="text/javascript" src="slider/scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+	
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var s = $("#sticker");
+				var pos = s.position();					   
+				$(window).scroll(function() {
+					var windowpos = $(window).scrollTop();
+					
+					if (windowpos >= pos.top) {
+						s.addClass("stick");
+					} else {
+						s.removeClass("stick");	
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		        // Normal menu - hover
+                    $bar.on({
+                        mouseenter: function() {
+                            if (utils.layout.width() > 480)
+                                $('ul', this).stop(true, true).show('slide', {direction: 'left'}, menuSpeed);
+                        },
+                        mouseleave: function() {
+                            if (utils.layout.width() > 480)
+                                $('ul', this).stop(true, true).hide('slide', {direction: 'left'}, menuSpeed);
+                        }
+                    }, '.submenu');
+			</script>
+    
+    </head>
+    <body>
+    	<div class="wrapper">
+        	<div class="header">				
+				<img class="logo" src="images/logo.png"/>
+				<h2>CIT department</h2>				
+				<div class="search_form">
+					<input type="text" name="search" value="Search"/>
+				</div>
+            
+				
+            </div>
+            	<div id="sticker" class="nav">
+            	<ul>
+                	<li><a href="">Home</a></li>
+                    <li><a href="">At a glance</a></li>
+                    <li><a href="">Feculties</a></li>
+                    <li><a href="">Download</a></li>
+                    <li><a href="">Academics</a>
+						<ul>
+							<li><a href="">Academic calender</a></li>
+							<li><a href="">Class routin</a></li>
+							<li><a href="">Syllabus</a></li>
+						
+						
+						</ul>
+					</li>
+                    <li><a href="">Addmision</a></li>
+                    <li><a href="">Officers&Stuff</a></li>
+                    <li><a href="">Login</a></li>
+
+                
+                </ul>
+            </div>
+            <div class="content">
+				
+				<div class="sidebar_menu">
+					<div class="side_nav">
+					<ul>
+                	<li><a href="">Home</a></li>
+                    <li><a href="">At a glance</a></li>
+                    <li><a href="">Feculties</a></li>
+                    <li><a href="">Download</a></li>
+                    <li><a href="">Academics</a>
+						<ul>
+							<li><a href="">Academic calender</a></li>
+							<li><a href="">Class routin</a></li>
+							<li><a href="">Syllabus</a></li>
+						
+						
+						</ul>
+					</li>
+                    <li><a href="">Addmision</a></li>
+                    <li><a href="">Officers&Stuff</a></li>
+                    <li><a href="">Login</a></li>
+
+                
+                </ul>
+                          	
+                </div>   
+                </div>   
+				<div class="teacher_info">
+			
+					<table id="teacher"border="0">
+					<tbody>
+						<tr><th colspan="4">Chairman</th></tr>
+						<tr>
+							<td> </td>
+							<td>Delowar Hossain</td>
+							<td>delowar.cit@gmail.com</td>
+							<td>Assistant Professor</td>
+						</tr>
+						<tr><th colspan="4">Assistant Professor</th></tr>
+						<tr>
+							<td>1.</td>
+							<td>Md. Mahfuzur Rahman</td>
+							<td>The header</td>
+							<td>Assistant Professor</td>
+						</tr>
+							<tr>
+							<td>1.</td>
+							<td>Adiba Mahzabin Nitu</td>
+							<td>nitu_cst_ru@yahoo.com</td>
+							<td>Assistant Professor</td>
+						</tr>	
+							<tr>
+							<td>1.</td>
+							<td>Md. Mahfuzur Rahman</td>
+							<td>The header</td>
+							<td>Assistant Professor</td>
+						</tr>	
+							<tr>
+							<td>1.</td>
+							<td>Md. Mahfuzur Rahman</td>
+							<td>The header</td>
+							<td>Assistant Professor</td>
+						</tr>	
+							<tr>
+							<td>1.</td>
+							<td>Md. Mahfuzur Rahman</td>
+							<td>The header</td>
+							<td>Assistant Professor</td>
+						</tr>
+						
+						<tr><th colspan="4">Lecturer</th></tr>
+						
+						<tr>
+							<td>1.</td>
+							<td>Md. Nadim</td>
+							<td>mnadims.cse@gmail.com</td>
+							<td>Lecturer</td>
+						</tr>	
+						<tr>
+							<td>1.</td>
+							<td>Md. Mahfuzur Rahman</td>
+							<td>The header</td>
+							<td>Assistant Professor</td>
+						</tr>
+						
+					</tbody>
+					</table>
+			
+				</div>
+            </div>
+			
+			
+			
+			
+			
+		
+			
+			<div class="clear">
+			</div>
+			<div class="bellow_footer">
+			</div>
+            <div class="footer">
+				
+				<p>Copyright: Department of CIT</p>
+			</div>
+            </div>        
+     
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 	<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>CIT</title> 	
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	
+
+	
+	<!-- For slider plugin-->
+    <link rel="stylesheet" href="slider/nivo-slider.css" type="text/css" media="screen" />  
+	<link rel="stylesheet" href="slider/default/default.css" type="text/css" media="screen" />
+	   <script type="text/javascript" src="slider/scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+	
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var s = $("#sticker");
+				var pos = s.position();					   
+				$(window).scroll(function() {
+					var windowpos = $(window).scrollTop();
+					
+					if (windowpos >= pos.top) {
+						s.addClass("stick");
+					} else {
+						s.removeClass("stick");	
+					}
+				});
+			});
+		</script>
+    
+    </head>
+    <body>
+    	<div class="wrapper">
+        	<div class="header">				
+				<img class="logo" src="images/logo.png"/>
+				<h2>CIT department</h2>				
+				<div class="search_form">
+					<input type="text" name="search" value="Search"/>
+				</div>
+            
+				
+            </div>
+            	<div id="sticker" class="nav">
+            	<ul>
+                	<li><a href="">Home</a></li>
+                    <li><a href="">At a glance</a></li>
+                    <li><a href="">Feculties</a></li>
+                    <li><a href="">Download</a></li>
+                    <li><a href="">Academics</a>
+						<ul>
+							<li><a href="">Academic calender</a></li>
+							<li><a href="">Class routin</a></li>
+							<li><a href="">Syllabus</a></li>
+						
+						
+						</ul>
+					</li>
+                    <li><a href="">Addmision</a></li>
+                    <li><a href="">Officers&Stuff</a></li>
+                    <li><a href="">Login</a></li>
+
+                
+                </ul>
+            </div>
+            <div class="content">
+				<div class="slider">
+					<div class="slider-wrapper theme-default">
+						<div id="slider" class="nivoSlider">
+							<img src="slider/images/toystory.jpg" data-thumb="slider/images/toystory.jpg" alt="" />
+							<a href="http://dev7studios.com"><img src="slider/images/up.jpg" data-thumb="slider/images/up.jpg" alt="" title="This is an example of a caption" /></a>
+							<img src="slider/images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+							<img src="slider/images/nemo.jpg" data-thumb="slider/images/nemo.jpg" alt="" title="#htmlcaption" />
+						</div>
+							<div id="htmlcaption" class="nivo-html-caption">
+								<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+							</div>
+					</div>
+				</div>
+				
+            	
+                <div class="main_content">
+					<h2>Message of Chairman</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                </div>                
+            </div>
+			<div class="notice">
+				<h2>Notice</h2>
+				<marquee behavior="scroll" direction="up" marquee-speed="slow" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></marquee>
+			
+			</div>
+			<div class="events">
+				<h2>Events</h2>
+						<marquee behavior="scroll" direction="up" marquee-speed="slow" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></marquee>
+			
+			
+			</div>
+			<div class="clear">
+			</div>
+			<div class="gelary">
+			
+				<div class="photo_gelary"></div>
+			
+			</div>
+			<div class="clear">
+			</div>
+			<div class="bellow_footer">
+			</div>
+            <div class="footer">
+				
+				<p>Copyright: Department of CIT</p>
+				</div>
+            </div>        
+        </div> 
+    </body>
+</html>
